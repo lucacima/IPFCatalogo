@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Catalogo Parquet</title>
+<META NAME="KEYWORDS" CONTENT="CATALOGO PARQUET">
+<LINK REL=stylesheet TYPE="text/css" HREF="catag.css">
+<SCRIPT LANGUAGE="JavaScript">
+</script>
+</head>
+<body>
+<div class="corpo">
+    <div class="render">
+    
+    </div>
+    <div class="lato">
+      <div class="categsel">
+            <p><b>COLLEZIONI IPF</b></p>
+      </div>
+      <div class="menu">
+        <button class="accordion">I CLASSICI</button>
+        <div class="panel">
+          <p><img src="render/iclassici_quercia_ariashubert.jpg" class="prodotto" onclick="cambia_render('render/gres-porcellanato-effetto-legno-prezzi_O6B MODIFICATO.jpg');"></p>
+          <p><img src="render/iclassici_quercia_naturalevivaldi.jpg" class="prodotto" onclick="cambia_render('render/gres-porcellanato-effetto-legno-prezzi_O6B.jpg');"></p>
+        </div>
+
+        <button class="accordion">CAMELOT</button>
+        <div class="panel">
+          <p><img src="render/camelot_artu.jpg" class="prodotto" onclick="cambia_render('render/gres-porcellanato-effetto-legno-prezzi_O6B MODIFICATO.jpg');"></p>
+        </div>
+
+        <button class="accordion">DOGHE DEL MASTRO</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              }
+            }
+            
+            function cambia_render(nome_img) {                
+                var render= document.getElementsByClassName('render');
+                render[0].style.backgroundImage= "url('" + nome_img +"')";
+            }
+                
+        </script>
+        
+      </div>    
+    </div>
+</div>
+</body>
+</html>

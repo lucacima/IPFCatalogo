@@ -1,0 +1,146 @@
+Body
+{
+	background-color: white;
+	margin: 0px;    
+}
+
+.corpo
+ {
+    position: absolute;
+    font-size: 9pt;
+    width: 1100px;
+    height:650px;
+    border: 0px solid black;
+	margin:auto;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;    
+}
+
+.render
+{
+    position: absolute;
+	top:0;
+	left:0;
+    width: 900px;
+    height:650px;
+    border: 0px solid green;
+    margin:auto;
+    background-image: url(render/gres-porcellanato-effetto-legno-prezzi_O6B.jpg);
+    background-repeat:no-repeat;
+    background-position:center;    
+    transition: background-image 1s ease-in-out;
+}
+
+.lato
+{
+    position: absolute;
+	top:0;
+	left:900;
+    width: 200px;
+    height:650px;
+    border: 0px solid yellow;
+    margin:auto;
+}
+
+.categsel
+{
+    background-color: #ccc;
+    position: absolute;
+	top:0;
+	left:0;
+    width: 180px;
+    height:100px;
+    border: 0px solid blue;
+    margin:auto;
+    text-align: center;
+}
+
+.categsel p
+{
+    padding: 20px;
+    padding-top: 25px;
+    font: Arial;
+    font-size: 12pt;        
+    color: #eee;
+}
+
+.menu
+{
+    background-color: #eee;
+    position: absolute;
+	top:100;
+	left:0;
+    width: 180px;
+    height:550px;
+    border: 0px solid brown;
+    padding:0px;
+    overflow-y: auto;
+    overflow-x:hidden;    
+}
+
+.prodotto
+{
+    width: 160px;
+    height: 80px;
+    border: 0px;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font: Arial;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 10px;
+    background-color: ddd;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*
+.accordion h3 + div {
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: height 0.3s ease-in;
+        -moz-transition: height 0.3s ease-in;
+        -o-transition: height 0.3s ease-in;
+        -ms-transition: height 0.3s ease-in;
+        transition: height 0.3s ease-in;
+}
+
+.accordion :target h3 + div {
+        height: 100%;
+}
+
+.accordion .section.large:target h3 + div {
+        overflow: auto;
+}
+*/
